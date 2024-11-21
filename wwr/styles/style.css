@@ -160,6 +160,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 footer a {
@@ -238,20 +239,225 @@ main section img {
     align-self: center;
 }
 
+.page2-body {
+    background-image: url(../images/hero.png);
+    background-color: #fdfdfc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .faq-grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(10, 100px);
 }
 
-#faq-bg {
-    width: 100%;
+#faq-box {
+    display: grid;
+    grid-template-columns: repeat(30, 20px);
+    grid-template-rows: repeat(30, 20px);
+    background-color: rgb(246, 251, 255);
+    grid-column: 2 / 11;
+    grid-row: 2 / 10;
+    z-index: 0;
+    height: 1500px;
 }
 
-#faq1-box {
-    grid-column: 2 / 5;
-    grid-row: 2 / 4;
+.faq-1, .faq-2, .faq-3 .faq-4 {
+    display: inline-block;
+    color: #ffffff;
+    font-family: "Arima", serif, sans-serif;
+    position:relative;
+    min-height: 150px;
+    width: 500px;
+    background-color: #e46d66;
+    overflow-wrap: normal;
+    font-size: 24px;
+    padding: 25px;
+    z-index: 1;
+    border-radius: 3%;
+    box-shadow: 5px 5px 10px #6f7364;
+
 }
+
+.faq1-answer, .faq2-answer, .faq3-answer, .faq4-answer, .faq5-answer, .faq6-answer {
+    min-height: 150px;
+    width: 700px;
+    overflow: scroll;
+    background-color: #3598b7;
+    transition: height 0.3s ease, display 0.3s ease; 
+    font-size: 15px;
+    padding: 20px;
+    padding-top: 45px;
+    z-index: 0;
+}
+
+
+.faq-1 {
+    grid-row: 3 / 6;
+    grid-column: 3 / 6;
+}
+
+.faq1-answer {
+    grid-row: 10/15;
+   
+}
+
+
+.faq-2 {
+    grid-row: 6 / 7;
+    grid-column: 2 / 6;
+}
+
+.faq2-answer {
+    margin-top: 35%;
+    grid-row: 7 / 11;
+    grid-column: 3 / 6;
+}
+
+
+.faq-3 {
+    grid-row: 30 / 40;
+    grid-column: 3 / 6;
+}
+
+.faq3-answer {
+    grid-row: 7 / 13;
+    grid-column: 4 / 10;
+   
+}
+
+
+.faq-4 {
+    grid-row: 2 / 6;
+    grid-column: 3 / 6;
+}
+
+.faq4-answer {
+    grid-row: 7 / 13;
+    grid-column: 4 / 10;
+   
+}
+
+.faq-5 {
+    grid-row: 2 / 6;
+    grid-column: 3 / 6;
+}
+
+.faq5-answer {
+    grid-row: 7 / 13;
+    grid-column: 4 / 10;
+   
+}
+
+
+.faq-6 {
+    grid-row: 2 / 6;
+    grid-column: 3 / 6;
+}
+
+.faq6-answer {
+    grid-row: 7 / 13;
+    grid-column: 4 / 10;
+   
+}
+
+
+
+
+/* Read more button */
+
+/*.read-more-state {
+    display: none;
+  }
+  
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'Read more';
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less';
+  }
+  
+  .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    font-size: .9em;
+    max-height: 30px;
+    width: 80px;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+  }
+
+  #read-more-state:checked ~ .faq1-answer {
+    max-height: 600px;
+} 
+    
+I tried but it ended up being more tedious and not worth the work. Just stuck to an overflow: scroll;*/
+
+
+
+/* Contactus */
+
+
+form {
+    padding: 1em;
+    border: 1px solid #ccc;
+    width: 500px;
+    border-radius: 1em;
+    margin: 80px auto;
+    text-align: center;
+}
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+p + p {
+    margin-top: len;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+label {
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+}
+
+input {
+    height: 5px;
+    padding: 10px;
+}
+
+
 
 /* Media Query */
 
