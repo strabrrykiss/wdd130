@@ -1,11 +1,238 @@
-.logo {
-    width: 120px;
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&display=swap'); /* Parkisans */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap'); /* Sour Gummy */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DynaPuff:wght@400..700&family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap'); /* Barlow */
+
+@font-face {
+    font-family: "Parkisans";
+    src: url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&display=swap') format("truetype");
+    font-weight: 300;
+    font-style: normal;
 }
 
-.login {
-    width: 20px;
+@font-face {
+    font-family: "Sour Gummy";
+    src: url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&display=swap') format("truetype");
+    font-weight: 300;
+    font-style: normal;
 }
 
 img.userProfile {
     width: 50px;
+}
+
+header {
+    display:flex;
+    background-color: #fae4f1;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    line-height: 1em;
+    font-size: 1.8em;
+    font-family: Barlow, Manrope;
+}
+
+nav a {
+    color: #715252;
+    text-decoration: none;
+}
+
+#header {
+    background-color: #fae4f1;
+}
+
+#header-box {
+    display:grid;
+    justify-content: center;
+    padding-top:10px;
+    padding-bottom: 30px;
+}
+
+.navv {
+    float: left;
+    margin-right: 100px;
+    padding: 10px;
+
+}
+
+.login {
+    text-align: right;
+    justify-content: right;
+}
+
+.logpfp {
+    width: 40px;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 120px;
+    height: 75px;
+    margin-top: -10px;
+    float: left;
+    margin-right: -80px;
+}
+
+.header-img {
+    position: relative;
+    text-align: center;
+    width: 550px;
+    border: solid #000;
+    border-width: 1px;
+}
+
+.header-msg {
+    position: absolute;
+    padding: 20px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 100px;
+    -webkit-text-stroke: 0.1px;
+    -webkit-text-stroke-color: aliceblue;
+}
+
+.header-img:hover {
+    background-color: #ffffff;
+    opacity: 0.45;
+    -webkit-backface-visibility: hidden;
+    transition: 0.3s;
+}
+
+#header-box:hover {
+    text-shadow:
+    -0.2px -0.2px 0 #000000,
+    0.2px 0.2px 0 #000000,
+    -0.2px -0.2px 0 #000000,
+    0.2px 0.2px 0 #000000;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+p {
+    font-family: "Parkisans", Manrope;
+}
+
+.navv:hover {
+    background-color: #ffffff;
+    opacity: 0.45;
+    -webkit-backface-visibility: hidden;
+    transition: 0.3s;
+    color: #884567;
+}
+
+.login:hover {
+    background-color: #ffffff;
+    opacity: 0.45;
+    -webkit-backface-visibility: hidden;
+    transition: 0.3s;
+    color: #e080b0;
+}
+
+
+
+
+
+
+
+
+#tags {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfb0cc;
+    height: 40px;
+    white-space: normal;
+    overflow: hidden;
+    border: solid #000;
+    border-width: 1px;
+}
+
+#tags a {
+    text-decoration: none;
+    color: #7f4876;
+    font-size: 15px;
+    text-align: justify;
+    font-family: "Parkisans", Manrope;
+}
+
+#tags-2 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfb0cc;
+    color: #fff9fd;
+    -webkit-text-stroke: 0.3px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 220px;
+    height: 30px;
+    border-left: solid #000;
+    border-right: solid #000;
+    border-bottom: solid #000;
+    border-width: 1px;
+    margin-left: 50px;
+    font-family: "Parkisans", Manrope;
+}
+
+
+
+
+
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+}
+
+.community-card {
+    background-color: #7f4876;
+    width:500px;
+}
+
+.self-card {
+    background-color: #ffadf1;
+    width:500px;
+    height: 800px;
+    align-content: right;
+}
+
+.learn-animate {
+
+}
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfb0cc;
+    height: 500px;
+    white-space: normal;
+    overflow: hidden;
+    border: solid #000;
+    border-width: 1px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #7f4876;
+    font-size: 15px;
+    text-align: justify;
+    font-family: "Parkisans", Manrope;
+}
+
+.social {
+    width:50px;
 }
