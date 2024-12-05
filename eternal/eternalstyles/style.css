@@ -191,23 +191,44 @@ p {
 
 .home-grid {
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(30, 100px);
 }
 
 .community-card {
     background-color: #7f4876;
-    width:500px;
+    width:550px;
+    height: 600px;
+    grid-column: 1/7;
+    grid-row: 1/10;
 }
 
 .self-card {
     background-color: #ffadf1;
-    width:500px;
-    height: 800px;
-    align-content: right;
+    width:550px;
+    height: 600px;
+    grid-column: 2/10;
+    grid-row: 1/10;
 }
 
 .learn-animate {
+    grid-column: 2/10;
+    grid-row: 1/10;
+}
 
+.home-courses {
+    grid-column: 2/10;
+    grid-row: 1/10;
+}
+
+.home-courses1 {
+    grid-column: 2/10;
+    grid-row: 1/10;
+}
+
+.join {
+    grid-column: 2/10;
+    grid-row: 20/30;
 }
 
 
