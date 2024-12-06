@@ -191,45 +191,50 @@ p {
 
 .home-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(30, 100px);
 }
 
 .community-card {
     background-color: #7f4876;
-    width:550px;
+    width:560px;
     height: 600px;
-    grid-column: 1/7;
-    grid-row: 1/10;
+    margin-top: 35px;
+    grid-column: 1/5;
+    grid-row: 1/7;
 }
 
 .self-card {
     background-color: #ffadf1;
-    width:550px;
+    width:560px;
     height: 600px;
-    grid-column: 2/10;
-    grid-row: 1/10;
+    margin-top: 35px;
+    grid-column: 6/10;
+    grid-row: 1/7;
 }
 
 .learn-animate {
     grid-column: 2/10;
-    grid-row: 1/10;
+    grid-row: 10/15;
 }
 
 .home-courses {
     grid-column: 2/10;
-    grid-row: 1/10;
+    grid-row: 10/15;
 }
 
 .home-courses1 {
     grid-column: 2/10;
-    grid-row: 1/10;
+    grid-row: 10/15;
 }
 
 .join {
     grid-column: 2/10;
-    grid-row: 20/30;
+    grid-row: 10/15;
 }
+
+
+
 
 
 
@@ -239,7 +244,8 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #dfb0cc;
-    height: 500px;
+    height: 30px;
+    padding: 5px;
     white-space: normal;
     overflow: hidden;
     border: solid #000;
@@ -254,6 +260,8 @@ footer a {
     font-family: "Parkisans", Manrope;
 }
 
-.social {
-    width:50px;
+footer img {
+    width:15px;
+    align-items: center;
+    justify-content: center;
 }
