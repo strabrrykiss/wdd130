@@ -3,6 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DynaPuff:wght@400..700&family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap'); /* Barlow */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DynaPuff:wght@400..700&family=Lilita+One&family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap'); /* Lilita One */
+
 @font-face {
     font-family: "Parkisans";
     src: url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&display=swap') format("truetype");
@@ -15,6 +18,11 @@
     src: url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Manrope:wght@200..800&family=Parkinsans:wght@300..800&display=swap') format("truetype");
     font-weight: 300;
     font-style: normal;
+}
+
+#content {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 img.userProfile {
@@ -90,8 +98,9 @@ nav a {
 .header-msg {
     position: absolute;
     padding: 20px;
-    top: 60%;
+    top: 43%;
     left: 50%;
+    right: 20%;
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: 100px;
@@ -192,47 +201,294 @@ p {
 .home-grid {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(30, 100px);
+    grid-template-rows: repeat(20, 100px);
+    justify-content: center;
 }
 
 .community-card {
-    background-color: #7f4876;
-    width:560px;
-    height: 600px;
+    background-color: #fae4f1;
+    height: 580px;
     margin-top: 35px;
+    margin-left: 30px;
     grid-column: 1/5;
     grid-row: 1/7;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: solid #000;
+    border-width: 1px;
 }
+
+.community-card p {
+    font-family: "Parkisans", Manrope;
+    font-size: 25px;
+    color: #7f4859;
+}
+
+.community-card img {
+    border: solid #000;
+    border-width: 1px;
+}
+
+.image-container .credits {
+    display: flex;
+    position: absolute;
+    top: 113%;
+    left: 14%;
+    right: 20%;
+    color: #71525e;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .credits {
+    opacity: 1;
+  }
+
+.image-container img:hover {
+    background-color: #ffffff;
+    opacity: 0.45;
+    -webkit-backface-visibility: hidden;
+    transition: 0.3s;
+}
+
+.crd-2 {
+    text-align: right;
+}
+
+mark {
+    background-color: #fae4f1;
+}
+.credits {
+    font-family: "Parkisans", Manrope;
+    font-size: 45px;
+    font-weight: 700;
+    -webkit-text-stroke-color: #fae4f1;
+}
+
+
+.tags-bold {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Lilita One";
+    color: #71525e;
+}
+
+
+
+
 
 .self-card {
-    background-color: #ffadf1;
-    width:560px;
-    height: 600px;
+    background-color: #dfcad6;
+    height: 620px;
     margin-top: 35px;
+    margin-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     grid-column: 6/10;
     grid-row: 1/7;
+    justify-items: center;
+    border: solid #000;
+    border-width: 1px;
 }
+
+.self-card img {
+    width: 450px;
+    border: solid #000;
+    border-width: 1px;
+    justify-items: center;
+}
+
+.self-card img:hover {
+    background-color: #ffffff;
+    opacity: 0.45;
+    -webkit-backface-visibility: hidden;
+    transition: 0.3s;
+}
+
+.slf-txt {
+    font-family: "Parkisans", Manrope;
+    font-size: 25px;
+    color: #7f4859;
+    text-align: right;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+
+.slf-txt:after {
+    content: '>';
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.slf-txt:hover span {
+    content: '>';
+    padding-right: 25px;
+    color: #b45c88;
+    text-shadow: 0px 0px 6px rgb(255, 205, 227);
+  }
+  .slf-txt:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+
+
 
 .learn-animate {
-    grid-column: 2/10;
-    grid-row: 10/15;
+    grid-column: 1/8;
+    grid-row: 8/9;
+    margin-left: 50px;
 }
+
+.learn-animate h2 {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Lilita One";
+    color: #71525e;
+    margin: 0;
+}
+
+.learn-animate p {
+    font-family: "Parkisans", Manrope;
+    font-size: 20px;
+    font-weight: 600;
+    color: #7f4859;
+    text-align: right;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.learn-animate a {
+    text-decoration: none;
+    color: #7f4859;
+}
+
+.slf-txt2:after {
+    content: '>';
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.slf-txt2:hover span {
+    content: '>';
+    padding-right: 25px;
+    color: #b45c88;
+    text-shadow: 0px 0px 6px rgb(255, 205, 227);
+  }
+  .slf-txt2:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 .home-courses {
-    grid-column: 2/10;
-    grid-row: 10/15;
+    grid-column: 1/6;
+    grid-row: 9/14;
+    margin-top: 35px;
 }
+
+.home-courses img {
+    width: 800px;
+    border: solid #000;
+    border-width: 1px;
+}
+
+.image-container2 .credits {
+    display: flex;
+    position: absolute;
+    top: 209%;
+    left: 14%;
+    right: 20%;
+    color: #71525e;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container2:hover .credits {
+    opacity: 1;
+  }
+
+.image-container2 img:hover {
+    background-color: #ffffff;
+    opacity: 0.45;
+    -webkit-backface-visibility: hidden;
+    transition: 0.3s;
+}
+
+
 
 .home-courses1 {
-    grid-column: 2/10;
+    grid-column: 7/10;
     grid-row: 10/15;
+    margin-right: 50px;
+    margin-top: 50px;
+    width: 450px;
+    height: 500px;
+    background-color: #dfcad6;
+    border: solid #000;
+    border-width: 1px;
 }
+
+.home-courses1 p {
+    padding: 20px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Parkisans", Manrope;
+    font-size: 25px;
+    color: #7f4859;
+}
+
+
 
 .join {
-    grid-column: 2/10;
-    grid-row: 10/15;
+    grid-column: 3/8;
+    grid-row: 16/20;
+    border: solid #000;
+    border-width: 1px;
 }
 
+.join p {
+    display: flex;
+    position: absolute;
+    top: 247%;
+    left: 35%;
+    right: 35%;
+    -webkit-text-stroke: #fae4f1;
+    -webkit-text-stroke-width: 0.5px;
+    font-weight: 700;
+    font-family: "Parkisans", Manrope;
+    font-size: 25px;
+    color: #7f4859;
+}
+
+.join img {
+    width: 100%;
+    height: 400px;
+}
+
+.join img:hover {
+    background-color: #ffffff;
+    opacity: 0.45;
+    -webkit-backface-visibility: hidden;
+    transition: 0.3s;
+}
 
 
 
