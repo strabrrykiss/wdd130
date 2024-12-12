@@ -508,33 +508,65 @@ mark {
 
 .userprofile {
     display: flex;
+    align-items: center;
+    margin-top: 240px;
+    font-size: 16px;
+}
+
+.userprofile a {
+    font-size: 16px;
+}
+
+.time {
+    color:#c5acb5;
+    font-weight: 600;
 }
 
 .lat-img img {
-    display: block;
-    height: 300px;
+    /*display: block;
+    height: 650px;
+    margin-left: 82px;
+    margin-bottom: 30px;
+    transform: translateX(-30%);*/
 }
+
+/*.latest-1 .lat-img img {
+    height: 600px;
+    margin-left: 82px;
+    margin-bottom: 30px;
+    transform: translateX(-45%);
+
+}*/
 
 .lat-img {
     display:flex;
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    justify-self: end;
-
+    width: 540px;
+    margin-left: 10px;
+    /*overflow: hidden;
+    align-items: left;
+    margin-left: 40px;
+    margin-bottom: 10px;*/
+    border: solid #000;
+    border-width: 1px;
 }
 
 .lat-txt {
-    justify-self: start;
+    padding-top: 10px;
+    width: 300px;
     text-decoration: none;
 }
 
-.lat-txt h4 {
-    width: 100%;
+.lat-txt a {
+    text-decoration: none;
+    font-family: "Parkisans", Manrope;
+    font-size: 17px;
+    color: #000000;
 }
 
 .latest-1 {
     display:flex;
+    gap: 10px;
+
     grid-column: 1/7;
     grid-row: 2/6;
     width: 840px;
@@ -569,10 +601,30 @@ mark {
     overflow: hidden;
 }
 
-.slf-txt2 {
+.lat-img img {
+    height: 600px;
+    margin-left: 82px;
+    margin-top: 40px;
+}
+
+.lat-img .latest-1 {
+    background-image: url('/eternal/eternalimages/blog1.gif') repeat 0 0;
+}
+
+.lat-img .latest-2 {
+    background-image: url("eternalimages/blog2.gif");
+}
+
+.lat-img .latest-3 {
+    background-image: url("eternalimages/blog3.gif");
+}
+
+
+
+.slf-txt3 {
     font-family: "Lilita One", Manrope;
-    font-size: 25px;
-    color: #7f4859;
+    font-size: 40px;
+    color:#71525e;
     text-align: right;
     cursor: pointer;
     display: inline-block;
@@ -580,8 +632,7 @@ mark {
     transition: 0.4s;
 }
 
-
-.slf-txt2:after {
+.slf-txt3:after {
     content: '>';
     opacity: 0;
     top: 0;
@@ -589,20 +640,17 @@ mark {
     transition: 0.5s;
 }
 
-.slf-txt2:hover span {
+.slf-txt3:hover span {
     content: '>';
     padding-right: 25px;
     color: #b45c88;
     text-shadow: 0px 0px 6px rgb(255, 205, 227);
-  }
-  .slf-txt2:hover span:after {
+}
+
+ .slf-txt3:hover span:after {
     opacity: 1;
     right: 0;
-  }
-
-
-
-
+ }
 
 
 
@@ -621,7 +669,7 @@ mark {
 .latest-upload a {
     text-decoration: none;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Lilita One";
     color: #71525e;
@@ -630,7 +678,16 @@ mark {
 
 
 .latest-upload img {
+    margin-top: 50px;
     width: 415px;
+}
+
+
+.latest-upload img:hover {
+    background-color: #ffffff;
+    opacity: 0.45;
+    -webkit-backface-visibility: hidden;
+    transition: 0.3s;
 }
 
 .popular-1 {
