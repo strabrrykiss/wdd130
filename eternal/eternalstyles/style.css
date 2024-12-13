@@ -205,6 +205,13 @@ p {
     justify-content: center;
 }
 
+.home-grid2 {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(23, 100px);
+    justify-content: center;
+}
+
 .community-card {
     background-color: #fae4f1;
     height: 580px;
@@ -541,6 +548,7 @@ mark {
 .lat-img {
     display:flex;
     width: 540px;
+/*    height: 450px;*/
     margin-left: 10px;
     /*overflow: hidden;
     align-items: left;
@@ -602,22 +610,25 @@ mark {
 }
 
 .lat-img img {
-    height: 600px;
-    margin-left: 82px;
-    margin-top: 40px;
+    width: 100%;
+/*    margin-left: 82px;
+    margin-top: 40px;*/
 }
 
-.lat-img .latest-1 {
-    background-image: url('/eternal/eternalimages/blog1.gif') repeat 0 0;
+/*.latest-1 .lat-img {
+    background-image: url("eternalimages/blog1.gif");
+    background-size: cover;
 }
 
-.lat-img .latest-2 {
-    background-image: url("eternalimages/blog2.gif");
+.latest-2 .lat-img {
+    background-image: url('/eternal/eternalimages/canime.jpg');
+    background-size: cover;
 }
 
-.lat-img .latest-3 {
+.latest-3 .lat-img {
     background-image: url("eternalimages/blog3.gif");
-}
+    background-size: cover;
+}*/
 
 
 
@@ -658,8 +669,8 @@ mark {
     grid-column: 7/10;
     grid-row: 2/7;
     border: solid #000;
-    justify-content: center;
     border-width: 1px;
+    justify-content: center;
     margin-top: 20px;
     padding: 15px;
     overflow: hidden;
@@ -691,8 +702,10 @@ mark {
 }
 
 .popular-1 {
+    display: flex;
     grid-column: 2/9;
-    grid-row: 15/20;
+    grid-row: 15/18;
+    height: 350px;
     border: solid #000;
     border-width: 1px;
     margin-top: 20px;
@@ -701,13 +714,78 @@ mark {
 }
 
 .popular-2 {
+    display: flex;
     grid-column: 2/9;
-    grid-row: 20/24;
+    grid-row: 19/22;
+    height: 350px;
     border: solid #000;
     border-width: 1px;
     margin-top: 20px;
     padding: 15px;
     overflow: hidden;
+}
+
+p
+
+.pop-img img {
+    width: 100%;
+}
+
+.pop-img img {
+    width: 500px;
+    height: 350px;
+    border: solid #000;
+    border-width: 1px;
+}
+
+.pop-txt {
+    display:block;
+    width: 400px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+.user-text {
+    margin-top: 120px;
+    width: 430px;
+}
+
+
+.userprofile2 {
+    padding: 0%;
+}
+
+
+.userprofile2 img {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+
+/*.pop-text a {
+    font-size: 200px;
+}*/
+
+.pop-txt {
+    width: 500px;
+    text-decoration: none;
+}
+
+.pop-txt a {
+    text-decoration: none;
+    font-family: "Parkisans", Manrope;
+    font-size: 17px;
+    color: #000000;
+}
+
+
+.titles {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Lilita One";
+    color: #71525e;
 }
 
 
@@ -722,14 +800,24 @@ mark {
 
 
 
-
-
-
-
-footer {
+.footer1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #dfb0cc;
+    height: 30px;
+    padding: 5px;
+    white-space: normal;
+    overflow: hidden;
+    border: solid #000;
+    border-width: 1px;
+}
+
+.footer2 {
+    display: grid;
+    grid-row: 24;
+    grid-column: 1/10;
+    text-align: center;
     background-color: #dfb0cc;
     height: 30px;
     padding: 5px;
