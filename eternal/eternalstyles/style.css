@@ -211,6 +211,12 @@ p {
     grid-template-rows: repeat(23, 100px);
     justify-content: center;
 }
+.home-grid3 {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(11, 100px);
+    justify-content: center;
+}
 
 .community-card {
     background-color: #fae4f1;
@@ -839,6 +845,220 @@ mark {
 
 
 
+/* Page 3 */
+
+.header-box2 {
+    display:grid;
+    justify-content: center;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: #fae4f1;
+    height: 400px;
+    padding-bottom: 70px;
+}
+
+
+.header-box2 h1 {
+    justify-content: left;
+    font-family: "Lilita One";
+    color:#71525e;
+    font-size: 40px;
+}
+
+.header-msg2 {
+    justify-content: center;
+}
+
+.header-box2 img {
+    width: 800px;
+    height: 300px;
+    opacity: 0.35;
+}
+
+.search {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfb0cc;
+    height: 40px;
+    white-space: normal;
+    overflow: hidden;
+    border: solid #000;
+    border-width: 1px;
+}
+
+input {
+    display: flex;
+    width: 700px;
+    justify-content: flex-start;
+    height: 25px;
+}
+
+.courseimg {
+    width: 650px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.courseimg:hover{
+    background-color: #ffffff;
+    opacity: 0.45;
+    -webkit-backface-visibility: hidden;
+    transition: 0.3s;
+}
+
+.twod {
+    grid-row: 1/4;
+    grid-column: 1/5;
+    background-color: #dfcad6;
+    width: 650px;
+    height: 300px;
+    margin-top: 20px;
+    border: solid #000;
+    border-width: 1px;
+}
+
+.twod h2 {
+    position: absolute;
+    margin-left: 35px;
+    font-size: 2.8em;
+    font-family: "Lilita One";
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: #dfcad6;
+}
+
+.twod img {
+    width: 100%;
+}
+
+.threed {
+    grid-row: 1/4;
+    grid-column: 6/10;
+    background-color: #dfcad6;
+    width: 650px;
+    height: 300px;
+    margin-top: 20px;
+    border: solid #000;
+    border-width: 1px;
+}
+
+.threed h2 {
+    position: absolute;
+    margin-left: 35px;
+    font-size: 2.8em;
+    font-family: "Lilita One";
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: #dfcad6;
+}
+
+.threed img {
+    width: 100%;
+}
+
+.rigging {
+    grid-row: 4/5;
+    grid-column: 1/5;
+    background-color: #dfcad6;
+    width: 650px;
+    height: 300px;
+    margin-top: 40px;
+    border: solid #000;
+    border-width: 1px;
+}
+
+.rigging h2 {
+    position: absolute;
+    margin-left: 35px;
+    font-size: 2.8em;
+    font-family: "Lilita One";
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: #dfcad6;
+}
+
+.rigging img {
+    width: 100%;
+}
+
+.speff {
+    grid-row: 4/5;
+    grid-column: 6/10;
+    background-color: #dfcad6;
+    width: 650px;
+    height: 300px;
+    margin-top: 40px;
+    border: solid #000;
+    border-width: 1px;
+}
+
+.speff img {
+    width: 100%;
+}
+
+.speff h2 {
+    position: absolute;
+    margin-left: 35px;
+    font-size: 2.8em;
+    font-family: "Lilita One";
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: #dfcad6;
+}
+
+.vfx {
+    grid-row: 7/8;
+    grid-column: 1/5;
+    background-color: #dfcad6;
+    width: 650px;
+    height: 300px;
+    margin-top: 80px;
+    border: solid #000;
+    border-width: 1px;
+}
+
+.vfx h2 {
+    position: absolute;
+    margin-left: 35px;
+    font-size: 2.8em;
+    font-family: "Lilita One";
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: #dfcad6;
+}
+
+.vfx img {
+    width: 100%;
+}
+
+.anime {
+    grid-row: 7/8;
+    grid-column: 6/10;
+    background-color: #dfcad6;
+    width: 650px;
+    height: 300px;
+    margin-top: 80px;
+
+    border: solid #000;
+    border-width: 1px;
+}
+
+.anime h2 {
+    position: absolute;
+    margin-left: 35px;
+    font-size: 2.8em;
+    font-family: "Lilita One";
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: #dfcad6;
+}
+
+.anime img {
+    width: 100%;
+}
+
+.twod .threed .rigging .speff .vfx .anime {
+
+}
+
+
+
+
 
 
 
@@ -896,6 +1116,36 @@ mark {
 }
 
 .footer2 img {
+    width:15px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer3 {
+    display: flex;
+    grid-row: 12;
+    grid-column: 1/10;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfb0cc;
+    height: 30px;
+    padding: 5px;
+    white-space: normal;
+    overflow: hidden;
+    border: solid #000;
+    border-width: 1px;
+}
+
+.footer3 a {
+    text-decoration: none;
+    color: #7f4876;
+    font-size: 15px;
+    text-align: justify;
+    font-family: "Parkisans", Manrope;
+}
+
+.footer3 img {
     width:15px;
     align-items: center;
     justify-content: center;
